@@ -120,6 +120,15 @@ Mach-O surgery done in pure Go. No ldid, no insert_dylib.
 
 [![trophy](https://github-profile-trophy.vercel.app/?username=x3vu&theme=purple&no-frame=true&row=1&column=7&margin-w=8)](https://github.com/x3vu)
 
+<table>
+<tr>
+<td><img src="./profile-summary-card-output/github_dark/0-profile-details.svg" alt="details"/></td>
+<td><img src="./profile-summary-card-output/github_dark/1-repos-per-language.svg" alt="repos per language"/></td>
+<td><img src="./profile-summary-card-output/github_dark/3-stats.svg" alt="stats"/></td>
+<td><img src="./profile-summary-card-output/github_dark/4-productive-time.svg" alt="productive time"/></td>
+</tr>
+</table>
+
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=x3vu&bg_color=0d1117&color=c9d1d9&line=E100FF&point=9C27B0&area=true&area_color=1a1b4b&hide_border=true" width="100%" alt="activity graph"/>
 
 <br/>
