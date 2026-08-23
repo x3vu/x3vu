@@ -1,0 +1,25 @@
+name: mirror streak stats
+on:
+  schedule:
+    - cron: "41 2 * * *"
+  workflow_dispatch:
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: fetch latest streak card (keep previous on failure)
+        run: |
+          mkdir -p assets
+          curl -sfL --max-time 30 "https://streak-stats.demolab.com?user=x3vu&hide_border=true&background=0D1117&ring=E100FF&fire=FF6D00&currStreakLabel=9C27B0&sideLabels=C9D1D9&dates=C9D1D9" -o assets/streak.svg.new             && mv assets/streak.svg.new assets/streak.svg             || echo "upstream down this run; keeping last good render"
+          test -f assets/streak.svg || { echo "no streak file yet"; exit 1; }
+      - name: commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/streak.svg
+          git diff --cached --quiet || git commit -q -m "assets: refresh streak mirror"
+          git push

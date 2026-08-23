@@ -122,7 +122,7 @@ Self-hosted cards, rebuilt daily by Actions here in this repo. They cannot
 </tr>
 </table>
 
-<img src="https://streak-stats.demolab.com?user=x3vu&hide_border=true" height="165" alt="streak"/>
+<img src="./assets/streak.svg" height="165" alt="streak"/>
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=x3vu&bg_color=0d1117&color=c9d1d9&line=E100FF&point=9C27B0&area=true&area_color=1a1b4b&hide_border=true" width="100%" alt="activity graph"/>
 
@@ -133,9 +133,9 @@ Self-hosted cards, rebuilt daily by Actions here in this repo. They cannot
 ## 贪吃蛇 · The Snake
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./snake-dark.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="./snake.svg"/>
-  <img alt="contribution snake" src="./snake.svg"/>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/x3vu/x3vu/output/snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/x3vu/x3vu/output/snake.svg"/>
+  <img alt="contribution snake" src="https://raw.githubusercontent.com/x3vu/x3vu/output/snake.svg"/>
 </picture>
 
 Redrawn by cron just after UTC midnight. It eats my commits, and my sleep.
